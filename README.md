@@ -12,7 +12,7 @@ Everything here is designed to be:
 * Production-minded
 * Easy to reason about and extend
 
-No toy demos. No black boxes.
+No black boxes.
 You **build every layer yourself**.
 
 ---
@@ -109,7 +109,7 @@ Projects are organized in a **strict learning order**, from fundamentals to adva
 * Security and access control
 * Scalable architectures
 
-### Advanced AI (Optional but Powerful)
+### Advanced AI 
 
 * LLM fine-tuning (SFT, LoRA, PEFT)
 * Domain-specific models
