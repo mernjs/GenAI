@@ -1,4 +1,4 @@
-# 200+ GenAI Questions & Answers
+# GenAI Questions & Answers
 
 ## Part 1: Fundamentals & Prompt Engineering (1–50)
 

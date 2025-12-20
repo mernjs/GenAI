@@ -109,7 +109,7 @@ Projects are organized in a **strict learning order**, from fundamentals to adva
 * Security and access control
 * Scalable architectures
 
-### Advanced AI 
+### Advanced AI
 
 * LLM fine-tuning (SFT, LoRA, PEFT)
 * Domain-specific models
@@ -156,6 +156,55 @@ By the end, you will understand:
 
 ---
 
+## GenAI Stack Used in This Repository
+
+This repository is **tool-opinionated on purpose**.
+
+All projects are built using a **production-proven GenAI stack** that reflects **what real teams actually use in shipped systems**, not experimental or academic setups.
+
+You will see these tools **reused across projects**, so they become intuitive rather than abstract.
+
+> This stack is a **reference baseline**, not a hard requirement.
+> You can swap tools — but the **system design principles remain the same**.
+
+---
+
+## GenAI Stack (Production-Proven)
+
+| **Category**                  | **Tool / Technology**              | **Description (Real-World Usage)**                                              |
+| ----------------------------- | ---------------------------------- | ------------------------------------------------------------------------------- |
+| **Core LLMs**                 | **OpenAI (GPT)**                   | Primary production LLM for chat, RAG, agents, reasoning, and multimodal tasks.  |
+|                               | **Anthropic (Claude)**             | Secondary or fallback model; preferred for long context and safer outputs.      |
+|                               | **Google (Gemini)**                | Used when tightly integrated with Google Cloud or multimodal search workflows.  |
+|                               | **Meta (LLaMA)**                   | Open-weight models for self-hosted, cost-controlled, or data-sensitive systems. |
+|                               | **Mistral AI (Mistral / Mixtral)** | Lightweight open models often chosen for efficiency and EU data residency.      |
+| **Model Runtime & Inference** | **Ollama**                         | Local development runtime for testing and prompt iteration.                     |
+|                               | **vLLM**                           | High-performance production inference with batching and KV caching.             |
+| **Frameworks**                | **LangChain**                      | Orchestration framework for prompts, tools, memory, RAG, and agents.            |
+|                               | **LlamaIndex**                     | RAG-focused framework for indexing, chunking, and retrieval pipelines.          |
+| **Agents**                    | **LangGraph**                      | Production-grade agent workflows using explicit state graphs.                   |
+|                               | **AutoGen**                        | Multi-agent framework mainly for experimentation and simulations.               |
+| **Vector Databases**          | **Pinecone**                       | Managed vector DB for scalable semantic search and RAG.                         |
+|                               | **Qdrant**                         | Self-hosted or managed alternative with strong filtering support.               |
+|                               | **FAISS**                          | In-memory vector search for local development and experiments.                  |
+| **Embeddings**                | **OpenAI Embeddings**              | Default choice for most production systems.                                     |
+|                               | **BGE**                            | Open-source embeddings for self-hosted setups.                                  |
+|                               | **E5**                             | Multilingual embeddings for global applications.                                |
+| **Search Patterns**           | **BM25**                           | Keyword search for exact lexical matching.                                      |
+|                               | **Hybrid Search**                  | Keyword + vector search (most common RAG pattern).                              |
+|                               | **Re-rankers**                     | Improves retrieval quality in high-precision systems.                           |
+| **Evaluation**                | **RAGAS**                          | Automated evaluation for RAG quality and faithfulness.                          |
+| **Observability**             | **Langfuse**                       | Tracing, prompt versioning, and debugging for LLM workflows.                    |
+|                               | **Helicone**                       | Request-level logging, latency, and cost tracking.                              |
+| **Fine-Tuning**               | **LoRA**                           | Lightweight fine-tuning without full retraining.                                |
+|                               | **QLoRA**                          | Memory-efficient fine-tuning on limited hardware.                               |
+|                               | **PEFT**                           | Parameter-efficient tuning methods (LoRA/QLoRA family).                         |
+| **Multimodal**                | **Whisper**                        | Speech-to-text for voice bots and transcription systems.                        |
+|                               | **Stable Diffusion**               | Image generation for tools and internal workflows.                              |
+|                               | **DALL·E**                         | Managed image generation for creative use cases.                                |
+
+---
+
 ## Who this is for
 
 This repository is ideal for:
@@ -164,7 +213,6 @@ This repository is ideal for:
 * Backend or full-stack engineers adding AI features
 * Engineers transitioning into GenAI roles
 * Builders creating real AI-powered products
-* Anyone who prefers **code over slides**
 
 If you like learning by **building systems**, this repo is for you.
 

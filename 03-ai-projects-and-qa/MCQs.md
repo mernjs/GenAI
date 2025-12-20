@@ -1,4 +1,4 @@
-# 200+ GenAI MCQs
+# GenAI MCQs
 
 ---
 
