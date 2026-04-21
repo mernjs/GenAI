@@ -1,9 +1,3 @@
-Hello Vijay
-
-Here is your **clean, professional, no-emojis GitHub-ready README.md**:
-
----
-
 # Master MERN Stack Learning Roadmap
 
 Welcome to the MERN Stack + AI Developer Roadmap.
@@ -316,4 +310,4 @@ After completing this roadmap, you will be able to:
 
 ---
 
-Happy Coding Vijay
+Happy Coding
