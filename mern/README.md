@@ -265,16 +265,6 @@ Hands-on experimentation is essential for long-term growth.
 
 ---
 
-## Research Documentation
-
-[https://docs.google.com/document/d/1Pp2hh3z8zecX-ZH6HE0z6EwtpK03cMeaplhH6DDsU-g/edit](https://docs.google.com/document/d/1Pp2hh3z8zecX-ZH6HE0z6EwtpK03cMeaplhH6DDsU-g/edit)
-
-* Experiment notes
-* Learning summaries
-* Proof of concepts
-
----
-
 ## AI / ML / GenAI / Agentic AI
 
 [https://docs.google.com/document/d/1momEV4q3TEtVxAfXnUgfyOC5A0ET1d8iGTCfnypAl6Y/edit](https://docs.google.com/document/d/1momEV4q3TEtVxAfXnUgfyOC5A0ET1d8iGTCfnypAl6Y/edit)
